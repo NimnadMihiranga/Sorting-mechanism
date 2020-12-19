@@ -26,12 +26,28 @@ void setup(){
  pinMode(isObstaclePin, INPUT);
  pinMode(motorpin, OUTPUT);
  lcd.begin(16,2);
- lcd.print('Hello!');
+ lcd.print("Hello!");
 
 
 }
 
 void loop(){
+char input_key = LOW;
+LCD("Mode: Smaller(*)    taller(#)");
+input_key = keypadinput();
+if (input_key == "*" or input_key == "#"){
+LCD("Number of objects to be sorted: ");
+count_key = keypadinput();
+if (count_key == "*")
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -65,8 +81,8 @@ void IR(isObstaclePin){
 
 }
 
-void L298(motorpin){
- digitalWrite(motorpin, HIGH);
+void L298(motorpin,state){
+ digitalWrite(motorpin,state);
 }
 
 
