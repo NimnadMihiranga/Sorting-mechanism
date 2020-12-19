@@ -3,26 +3,29 @@
 
 
 
-void loop(){
+
+int isObstaclePin = 12;  // This is our input pin
+int isObstacle = LOW;  // HIGH MEANS NO OBSTACLE
+int motorpin = 11;
 
 
 
 
 
-}
+
+
+
+
 
 
 
 void setup(){
+  pinMode(12, INPUT);
+  pinMode(11, OUTPUT);
+  
+  
 
 
-
-
-
-
-}
-
-void keypad(){
 
 
 
@@ -31,7 +34,6 @@ void keypad(){
 
 
 
-\
 
 
 
@@ -45,25 +47,22 @@ void keypad(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Void IR(){
+void IR(){
+  isObstacle = digitalRead(isObstaclePin);
+  if (isObstacle == HIGH){
+  return HIGH;
+  }
+  else{
+  return LOW;  
+  }
+ delay(200)
 
 
 
 }
+
+void L298(){
+ digitalWrite(motorpin, HIGH);
+}
+
+
