@@ -19,7 +19,13 @@ Keypad keypad = Keypad(makeKeymap(keys) , rowPins, colPins , ROWS, COLS);
 
 
 
+void setup(){
+ pinMode(isObstaclePin, INPUT);
+ pinMode(motorpin, OUTPUT);
+ 
 
+
+}
 
 
 
@@ -39,7 +45,23 @@ void keypadinput(){
 
 }
 
+void IR(){
+  isObstacle = digitalRead(isObstaclePin);
+  if (isObstacle == HIGH){
+  return HIGH;
+  }
+  else{
+  return LOW;  
+  }
+ delay(200)
 
+
+
+}
+
+void L298(){
+ digitalWrite(motorpin, HIGH);
+}
 
 
 
