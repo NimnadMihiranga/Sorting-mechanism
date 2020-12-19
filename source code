@@ -51,7 +51,7 @@ void keypadinput(){
 
 }
 
-void IR(){
+void IR(isObstaclePin){
   isObstacle = digitalRead(isObstaclePin);
   if (isObstacle == HIGH){
   return HIGH;
@@ -65,7 +65,7 @@ void IR(){
 
 }
 
-void L298(){
+void L298(motorpin){
  digitalWrite(motorpin, HIGH);
 }
 
