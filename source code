@@ -1,19 +1,7 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+int isObstaclePin = 12;  // This is our input pin
+int isObstacle = LOW;  // HIGH MEANS NO OBSTACLE
+int motorpin = 11;
 
 #include <Keypad.h>
 const byte ROWS = 4;
