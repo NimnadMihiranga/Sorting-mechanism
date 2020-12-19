@@ -31,17 +31,10 @@ Keypad keypad = Keypad(makeKeymap(keys) , rowPins, colPins , ROWS, COLS);
 
 
 
-void loop(){
 
 
 
 
-
-}
-
-
-
-void setup(){
 
 
 
@@ -91,8 +84,3 @@ void keypadinput(){
 
 
 
-void IR(){
-
-
-
-}
