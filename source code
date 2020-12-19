@@ -19,6 +19,16 @@ int motorpin = 11;
 
 
 
+
+
+
+
+
+
+
+
+
+
 void setup(){
   pinMode(12, INPUT);
   pinMode(11, OUTPUT);
@@ -30,6 +40,9 @@ void setup(){
 
 
 }
+
+
+
 
 
 
