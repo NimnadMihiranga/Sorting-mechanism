@@ -1,3 +1,6 @@
+#include <LiquidCrystal.h>
+const int rs=A0,en=A1,d4=A2,d5=A3,d6=A4,d7=A5
+LiquidCrystal lcd(rs,en,d4,d5,d6,d7);
 
 int isObstaclePin = 12;  // This is our input pin
 int isObstacle = LOW;  // HIGH MEANS NO OBSTACLE
@@ -22,7 +25,8 @@ Keypad keypad = Keypad(makeKeymap(keys) , rowPins, colPins , ROWS, COLS);
 void setup(){
  pinMode(isObstaclePin, INPUT);
  pinMode(motorpin, OUTPUT);
- 
+ lcd.begin(16,2);
+ lcd.print('Hello!');
 
 
 }
@@ -64,7 +68,9 @@ void L298(){
 }
 
 
+void LCD(){
 
+}
 
 
 
